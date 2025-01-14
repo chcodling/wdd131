@@ -1,3 +1,38 @@
 header {
-    text-transform: uppercase;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2em;
+  h2 {
+    font-size: 16px;
+    color: #006eb6;
+    letter-spacing: 0.3em;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #ddd;
+  }
+}
+
+body {
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 20%;
+  border: solid 1px darkgrey;
+  padding: 80px 140px;
+}
+
+.does-list {
+  li {
+    padding-bottom: 10px;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  .logo {
+    width: 150px;
+  }
 }
