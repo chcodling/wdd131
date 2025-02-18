@@ -100,6 +100,10 @@ a:visited {
   display: none;
 }
 
+footer {
+  padding: 8px 36px;
+}
+
 @media screen and (min-width: 700px) {
   .gallery {
     grid-template-columns: 1fr 1fr;
