@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipes</title>
     <link rel="stylesheet" href="recipes.css" />
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module"></script>
   </head>
   <body>
     <header>
-      <img class="site_logo" src="images/recipe-book.png" alt="Recipe book logo" />
-      <h1>RecipeBook</h1>
+      <section class="page_title">
+        <img class="logo" src="images/recipe-book.png" alt="Recipe book logo" />
+        <h1>RecipeBook</h1>
+      </section>
     </header>
     <main>
       <form action="#">
@@ -24,19 +26,20 @@
       <hr />
       <article class="recipe">
         <img class="recipe-image" src="images/apple-crisp.jpg" alt="apple crisp with ice cream in a bowl" />
-        <div class="tag-row">
-          <span class="tag">dessert</span>
-          <span class="tag">dessert</span>
-          <span class="tag">dessert</span>
+        <div>
+          <div class="tag-line">
+            <span class="tag">dessert</span>
+            <span class="tag">dessert</span>
+          </div>
+          <h2>Apple Crisp</h2>
+          <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+          </span>
         </div>
-        <h2>Apple Crisp</h2>
-        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star">⭐</span>
-          <span aria-hidden="true" class="icon-star-empty">⭐</span>
-          <span aria-hidden="true" class="icon-star-empty">☆</span>
-        </span>
       </article>
     </main>
     <footer>

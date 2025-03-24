@@ -5,44 +5,120 @@
   --text-dark: #333;
   --text-light: #ebebeb;
   --primary-font: Arial, Helvetica, sans-serif;
-  --secondary-font: "Amatic SC", sans-serif;
+  --secondary-font: "Amatic SC";
 }
 
-/* * {
-  border: 1px solid red;
-} */
-header {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: center;
-}
-.site_logo {
-  height: 80px;
+h1,
+h2 {
+  font-family: var(--secondary-font), sans-serif;
+  font-style: normal;
 }
 
-h1 {
-  font-size: 4em;
-}
 body {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
+  color: var(--text-dark);
+}
+
+img {
+  max-width: 100%;
+}
+
+.page_title {
+  text-align: center;
+  margin-bottom: 2rem;
+  h1 {
+    display: inline;
+    font-size: 3.5em;
+    font-weight: 600;
+  }
+  .logo {
+    height: 3.75rem;
+  }
 }
 
 .search_row {
   display: flex;
-  img {
-    height: 16px;
-  }
+  padding: 1rem;
   input {
+    height: 2rem;
     width: 100%;
+    border: 1px solid #000;
+    border-radius: 0.5rem 0 0 0.5rem;
+    padding-left: 0.5rem;
+  }
+  button {
+    height: 2rem;
+    width: 2rem;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 0 0.5rem 0.5rem 0;
+    cursor: pointer;
   }
 }
 
 .recipe {
   display: flex;
   flex-direction: column;
-  border: 1px solid #333;
-  .recipe-image {
-    height: 50%;
+  gap: 1rem;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+
+  img {
+    display: block;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+  }
+
+  .tag-line {
+    display: flex;
+    width: 100%;
+    .tag {
+      height: 24px;
+      align-content: center;
+      font-weight: 600;
+      border: 1px solid #000;
+      padding: 0.5rem;
+    }
+  }
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.6em;
+  padding: 0 1rem;
+  .social {
+    display: block;
+    padding-bottom: 0.25rem;
+  }
+  img {
+    height: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .recipe {
+    flex-direction: row;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    max-width: 1000px;
+    margin: 2rem auto;
   }
 }
